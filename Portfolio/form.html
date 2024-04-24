@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kings Music Store</title>
+	<link rel="stylesheet" href="./css/form.css" >
+
+	<script  type="text/javascript">
+        <!--
+        alert("Welcome to the Kings Music Store - Newsletter Signup");
+        //-->
+        function validateForm()
+        {   var comment=document.forms[0].myComments.value;
+            if(comment=="enter here" || comment == "" ) 
+                {alert("Please fill out the comments textarea.");
+            return false;}
+        }
+
+        function checkLength(fName)
+        {
+            var fName = document.getElementById("fName");
+            var lName = document.getElementById("lName");
+            var email = document.getElementById("myEmail");
+            if(fName.value.length > 60 || lName.value.length > 60 || email.value.length > 60){
+                alert("maximum text input limit is 60");
+                return false;}
+        }
+    </script>
+    </head>
+
+    <body class="background">
+
+      <div>
+          <form method="post" action="http://infotech.scu.edu.au/cgi-bin/echo_form" onsubmit="return validateForm()">
+            <fieldset>
+            <div class="title">
+                <h2>Registration Form</h2>
+            </div>
+            <div class="field name">
+              <label for="fName">first_Name</label>
+              <input type="text" name="First Name" id="fName"  placeholder="Enter your Given name" required >
+          </div>
+          <div class="field name">
+              <label for="lName">Last_Name:</label>
+              <input type="text" name="lName" id="lName" placeholder="Enter your Family name" required>
+          </div>
+          <div class="inputfield">
+            <label for="myEmail">Email:</label>
+            <input type="email" name="myEmail" id="myEmail"  placeholder="Enter your e-mail address"  required>
+        </div>
+        <br>
+
+        <div class="">
+            <p>Select Your Age Group</p>
+            <input type="radio" id="early" name="age" value="15-25">15-25<br>
+            <input type="radio" id="earlyMid" name="age" value="26-35">26-35<br>
+            <input type="radio" id="mid" name="age" value="36-45">36-45<br>
+            <input type="radio" id="lateMid" name="age" value="46-55">46-55<br>
+            <input type="radio" id="old" name="age" value="55+">55+<br>
+        </div>
+        <br>
+        <div class="text">
+          <p>Choose the Music Genre</p>
+          <div>
+             <input type="checkbox" id="1" name="HeavyMetal" value="Heavy Metal">
+             <label for="1"> Heavy Metal</label><br> 
+         </div>
+         <div>
+             <input type="checkbox" id="2" name="Country and Western" value="Country">
+             <label for="2"> Country</label><br> 
+         </div>
+         <div>
+             <input type="checkbox" id="3" name="Classical" value="Classical">
+             <label for="3"> Classical</label><br> 
+         </div>
+         <div>
+             <input type="checkbox" id="4" name="RockAndRoll" value="Rock and Roll">
+             <label for="4"> Rock and Roll</label><br> 
+         </div>
+         <div>
+             <input type="checkbox" id="5" name="Pop" value="Pop">
+             <label for="5"> Pop</label><br> 
+         </div>
+         <div>
+             <input type="checkbox" id="6" name="Folk" value="Folk">
+             <label for="6"> Folk</label><br> 
+         </div>
+         <div>
+             <input type="checkbox" id="7" name="Blues" value="Blues">
+             <label for="7"> Blues</label><br> 
+         </div>
+         <div>
+             <input type="checkbox" id="8" name="Jazz" value="Jazz">
+             <label for="8"> Jazz</label><br> 
+         </div>
+         <div>
+             <input type="checkbox" id="9" name="Disco" value="Disco">
+             <label for="9">Disco</label><br> 
+         </div>
+         <div>
+             <input type="checkbox" id="10" name="Opera" value="Opera">
+             <label for="10"> Opera</label><br> 
+         </div>
+     </div>
+     <br>
+
+     <div class="inputfield">
+        <label for="myComments">If_any_others</label>
+        <textarea name="any other" id="myComments" rows="3" cols="60" placeholder="Enter if other genre" ></textarea>
+    </div>
+
+    <input class="submit" type="submit" value="Submit" onclick="checkLength()" /> 
+    <input class="reset" type="reset" value="Reset">
+</fieldset>
+</form>
+</div>
+
+</body>
+</html>

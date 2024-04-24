@@ -1,0 +1,30 @@
+body{
+	background: none;
+	color: #000;
+	
+
+}
+#wrapper
+{
+	width: 100%;
+
+}
+header, footer, #navigation
+{
+	display: none;
+
+}
+ 
+ #header
+ {
+ 	display: none;
+ }
+ #content
+ {
+ 	font-size: 20pt;
+ }
+ #rightbar
+ {
+ 	font-size: 20pt;
+ }
+

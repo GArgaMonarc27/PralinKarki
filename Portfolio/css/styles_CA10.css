@@ -1,0 +1,140 @@
+* {
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url(../images/backgroundimg1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.img {
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+
+:root {
+  font-size: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+body {
+  background-color: lightcyan;
+}
+
+span {
+  color: brown;
+}
+
+.intro {
+  background-color: gainsboro;
+  padding: 5px;
+}
+
+.studies {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.redtext {
+  color: red;
+  font-size: 2rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.greentext {
+  color: green;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.left-align {
+  margin-right: 60px;
+}
+
+.centeralign {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+  margin-top: 20px;
+}
+
+.right {
+  margin-left: 20vw;
+  margin-top: 20px;
+}
+
+#footer {
+  color: brown;
+}
+
+ul li {
+  list-style: square;
+}
+
+ol li {
+  list-style: upper-roman;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #aeaeae;
+  padding: 5px 20px;
+  transition: 0.6s ease;
+}
+
+ul li a:hover {
+  background-color: #ff8600;
+  color: #aeaeae;
+}
+
+ul li.active a {
+  background-color: #ff8600;
+  color: #aeaeae;
+}
+
+#skill {
+  margin: 0 0 0 130px;
+  padding: 1px 10px 20px 10px;
+  color: black;
+  font-size: 15pt;
+}
+
+#Java {
+  color: black;
+  min-width: 960px;
+}
+
+footer {
+  background-color: grey;
+  font-size: 15pt;
+  text-align: center;
+  color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
