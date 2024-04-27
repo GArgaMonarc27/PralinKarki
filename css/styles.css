@@ -95,7 +95,7 @@ section .title::after {
 
 .navbar.sticky {
     padding: 15px 0;
-    background: crimson;
+    background: rgb(82, 81, 82);
 }
 
 .navbar .max-width {
